@@ -11,8 +11,8 @@ class Pin
 
     public:
         Pin(int pin,int directie,int stare);
-        void set_pin(int value);
-        int get_direction();
+        void set(int value);
+        int get();
         void change_direction();
 };
 
