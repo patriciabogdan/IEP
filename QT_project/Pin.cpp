@@ -1,26 +1,41 @@
-#include "pin.h"
+class Pin{
 
-Pin:Pin(int pin,int directie,int stare)
+private:
+    int pin;
+    int directie;
+    int stare;
+
+
+     Pin:Pin(int pin,int directie,int stare)
 {
      this.pin->pin;
      this.directie->directie;
      this.stare->stare;
 }
 
-int Pin::get_direction()
+Public:
+    void set_pin(int pin);
+    int get_direction();
+    void change_direction(int dir);
+
+int get_direction()
 { 
   return this.directie; 
   
  }
 
-int Pin::set_pin(int pin)
+void set_pin(int pin)
 {
-  if(stare == 1)
+  if(this.stare == 1)
   {
-	pin = pin;  
+	this.pin = pin;  
   }
 }
-void Pin::change_direction(int dir)
+
+
+void change_direction(int dir)
 {
-  directie = dir;
+  this.directie = dir;
+}
+
 }
