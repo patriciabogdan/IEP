@@ -13,7 +13,7 @@ class Pin
         Pin(int pin,int directie,int stare);
         void set(int value);
         int get();
-        void change_direction();
+        void change_direction(int value);
 };
 
 #endif // PIN_H

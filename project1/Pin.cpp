@@ -1,7 +1,8 @@
 #include "pin.h"
 #include "bcm2835.h"
+#define PIN RPI_GPIO_P1_11
 
-Pin:Pin(int pin,int directie,int stare)
+Pin::Pin(int pin,int directie,int stare)
 {
      this->pin = pin;
      this->directie = directie;
@@ -16,7 +17,7 @@ int Pin::get()
 	return -1;
 }
 
-int Pin::set(int stare)
+void Pin::set(int stare)
 {
   if(directie == 1)
   {
