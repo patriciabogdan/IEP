@@ -4,8 +4,10 @@
 
 class Serial
 {
-public:
-    Serial();
+
+    public:
+        Serial();
+        virtual void AbstractMemberFunction() = 0;
 };
 
 #endif // SERIAL_H
